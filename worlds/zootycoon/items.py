@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 from BaseClasses import Item, ItemClassification
 
 if TYPE_CHECKING:
-    from .world import APQuestWorld
+    from .world import ZooTycoonWorld
 
 """
 ANIMALS:

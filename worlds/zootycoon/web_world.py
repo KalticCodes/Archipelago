@@ -28,21 +28,9 @@ class ZooTycoonWebWorld(WebWorld):
         "setup/en",
         ["KalticCodes","CosmosSailor"],
     )
-    # Let's have our setup guide in German as well.
-    # Do not translate the title and description!
-    # WebHost needs them to be the same to identify that it is the same tutorial.
-    # This lets it display the tutorials more compactly.
-    setup_de = Tutorial(
-        "Multiworld Setup Guide",
-        "A guide to setting up Zoo Tycoon for MultiWorld.",
-        "German",
-        "setup_de.md",
-        "setup/de",
-        ["KalticCodes","CosmosSailor"],
-    )
 
     # We add these tutorials to our WebWorld by overriding the "tutorials" field.
-    tutorials = [setup_en, setup_de]
+    tutorials = [setup_en]
 
     # If we have option groups and/or option presets, we need to specify these here as well.
     option_groups = option_groups
